@@ -1,4 +1,4 @@
-# 风见琳 :link: https://chair-lin.github.io 
+# 风见琳 :link: https://chair-lin.github.io/chair.github.io
 ### :page_facing_up: [2](https://chair-lin.github.io/tag.html) 
 ### :speech_balloon: 0 
 ### :hibiscus: 4263 
