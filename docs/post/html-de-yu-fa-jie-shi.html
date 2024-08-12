@@ -98,9 +98,9 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <div class="markdown-body" id="postBody"><h2>1.元素</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>一级标题<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
 <p>1.<code class="notranslate">h1</code>官方称呼为：元素（element），其他的书籍或教程视频里的叫法为：标签，标记。</p>
-<p>2.元素 = 起始标签 + 结束标签 + 内容 + 属性,（起始标签和结束标签里面的元素一定要是一样的否则没有效果，<strong>不要用大写用小写</strong>，结束标签比起始多一个/）</p>
-<p>3.不同的元素有不同的功能，比如：<code class="notranslate">h1</code>是一级标题为标题标签，<code class="notranslate">p</code>是段落标签。</p>
-<p>4.一般情况下，成对出现的元素是用来渲染内容的，比如<code class="notranslate">&lt;h1&gt;&lt;/h1&gt;</code>，<code class="notranslate">&lt;p&gt;&lt;/p&gt;</code>，不用做渲染内容的时候，也有可以单独出现的，比如<code class="notranslate">&lt;img&gt;</code>，<code class="notranslate">&lt;input&gt;</code>这种被称之为<strong>空元素</strong>或单标签只能有起始标签不能有结束标签。</p>
+<p>2.元素 = 起始标签 + 结束标签 + 内容 + 属性,（起始标签和结束标签里面的元素一定是一样的，<strong>不要用大写用小写</strong>，结束标签比起始多一个/）</p>
+<p>3.不同的元素有不同的功能，h1是一级标题为标题标签，p是段落标签。</p>
+<p>4.一般情况下，成对出现的元素是用来渲染内容的，比如<code class="notranslate">&lt;h1&gt;&lt;/h1&gt;</code>，<code class="notranslate">&lt;p&gt;&lt;/p&gt;</code>，不要渲染内容的时候，可以单独出现的，比如<code class="notranslate">&lt;img&gt;</code>，<code class="notranslate">&lt;input&gt;</code>这种被称之为<strong>空元素</strong>或单标签只能有起始标签不能有结束标签。</p>
 <blockquote>
 <p>空元素有两种写法：</p>
 <ul>
@@ -108,29 +108,54 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li><code class="notranslate">&lt;meta charset="UTF-8" /&gt;</code>这是老版本的写法表示闭合元素，现在也可以用，但是不推荐。</li>
 </ul>
 </blockquote>
-<p>5.元素可以嵌套，比如<code class="notranslate">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>，<code class="notranslate">&lt;body&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/body&gt;</code>，<code class="notranslate">&lt;h1&gt;&lt;em&gt;&lt;/em&gt;&lt;/h1&gt;</code>。</p>
-<p>6.通过嵌套来实现效果的叠加，比如<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/em&gt;&lt;/h1&gt;</code>，<code class="notranslate">h1</code>有着独占一行，字体加粗，字体变大的效果，<code class="notranslate">em</code>有着斜体的效果。如果像这样嵌套<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/em&gt;&lt;/h1&gt;</code>就会出现独占一行，字体加粗，字体变大，字体斜体的效果。（ps：错误的嵌套<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/h1&gt;&lt;/em&gt;</code>元素不能这样相互嵌套可能会出现乱码，不建议这样嵌套）</p>
+<h2>2.元素嵌套和关系</h2>
+<p>1.元素可以嵌套，比如<code class="notranslate">&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>，<code class="notranslate">&lt;body&gt;&lt;h1&gt;&lt;/h1&gt;&lt;/body&gt;</code>，<code class="notranslate">&lt;h1&gt;&lt;em&gt;&lt;/em&gt;&lt;/h1&gt;</code>。</p>
+<p>2.通过嵌套来实现效果的叠加，比如<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/em&gt;&lt;/h1&gt;</code>，<code class="notranslate">h1</code>有着独占一行，字体加粗，字体变大的效果，<code class="notranslate">em</code>有着斜体的效果。如果像这样嵌套<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/em&gt;&lt;/h1&gt;</code>就会出现独占一行，字体加粗，字体变大，字体斜体的效果。（ps：错误的嵌套<code class="notranslate">&lt;h1&gt;&lt;em&gt;我是标题&lt;/h1&gt;&lt;/em&gt;</code>元素不能这样相互嵌套可能会出现乱码，不建议这样嵌套）</p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/cd853c5216a40d34a9bce27da995f5ad6f71f47252ddfba505263a967bfb772b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31315f32332d32392d34332e706e67"><img src="https://camo.githubusercontent.com/cd853c5216a40d34a9bce27da995f5ad6f71f47252ddfba505263a967bfb772b/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31315f32332d32392d34332e706e67" alt="Snipaste_2024-08-11_23-29-43" data-canonical-src="https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-11_23-29-43.png" style="max-width: 100%;"></a></p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/2b5ff49b0feefdea178e95ec6bd784be02efed05c1e4dba59e6eb99f5977ee5f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31315f32332d33322d34392e706e67"><img src="https://camo.githubusercontent.com/2b5ff49b0feefdea178e95ec6bd784be02efed05c1e4dba59e6eb99f5977ee5f/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31315f32332d33322d34392e706e67" alt="Snipaste_2024-08-11_23-32-49" data-canonical-src="https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-11_23-32-49.png" style="max-width: 100%;"></a></p>
-<h2>2.属性</h2>
+<p>3.元素嵌套后的关系</p>
+<ul>
+<li>父元素：嵌套其他元素的元素，比如<code class="notranslate">&lt;html&gt;</code>是<code class="notranslate">&lt;head&gt;</code>和<code class="notranslate">&lt;body&gt;</code>的父元素。</li>
+<li>子元素：被嵌套的元素，比如<code class="notranslate">&lt;head&gt;</code>和<code class="notranslate">&lt;body&gt;</code>是<code class="notranslate">&lt;html&gt;</code>的子元素。</li>
+<li>祖先元素：嵌套其他元素的元素，比如<code class="notranslate">&lt;html&gt;</code>是<code class="notranslate">&lt;head&gt;</code>里面的<code class="notranslate">&lt;meta&gt;</code>的祖先元素。</li>
+<li>后代元素：被嵌套的元素，比如<code class="notranslate">&lt;head&gt;</code>里面的<code class="notranslate">&lt;meta&gt;</code>是<code class="notranslate">&lt;html&gt;</code>的后代元素。</li>
+<li>兄弟元素：嵌套在同一个父元素中的元素，比如<code class="notranslate">&lt;meta&gt;</code>和<code class="notranslate">&lt;title&gt;</code>都在<code class="notranslate">&lt;head&gt;</code>这个父元素里面且不相互嵌套所以是兄弟元素，<code class="notranslate">&lt;head&gt;</code>和<code class="notranslate">&lt;body&gt;</code>都在<code class="notranslate">&lt;html&gt;</code>这个父元素里面且不相互嵌套所以是兄弟元素。</li>
+</ul>
+<h2>3.属性</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">UTF-8</span>"<span class="pl-kos">&gt;</span></pre></div>
 <p>1.属性是元素的附加信息，属性只能出现在起始标签中，属性 = 属性名 + 属性值，属性名和属性值用等号连接，多个属性之间用空格隔开。</p>
-<p>2.属性值用引号包裹起来，引号可以是单引号也可以是双引号，但是必须统一。</p>
+<p>2.属性的属性值用引号包裹起来，引号可以是单引号也可以是双引号，但是必须统一。</p>
 <p>3.属性名是固定的，不能随便写，属性值是自定义的，可以随便写但是要通俗易懂。</p>
 <p>4.属性分两类：</p>
 <ul>
 <li>局部属性：某些元素特有的属性，比如<code class="notranslate">&lt;img&gt;</code>的<code class="notranslate">src</code>属性，<code class="notranslate">&lt;a&gt;</code>的<code class="notranslate">href</code>属性。</li>
 <li>全局属性：所有元素通用，比如<code class="notranslate">class</code>和<code class="notranslate">title</code>属性。</li>
 </ul>
-<h2>3.注释</h2>
+<h2>4.注释</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-c">&lt;!-- 我是注释 --&gt;</span></pre></div>
 <p>1.注释是给程序员看的，浏览器不会解析注释，注释不会显示在页面上。</p>
 <p>2.注释的写法：<code class="notranslate">&lt;!--  --&gt;</code>，在vscode中可以通过<code class="notranslate">Ctrl + /</code>快速生成注释或取消。</p>
 <p>3.注释可以写多行，注释不能嵌套代码原因参考第一条。</p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/093b50b5f187150398091905eda8b9fa9b0ef5b894ed43271b2b1c5d6823a044/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31325f30302d30312d34382e706e67"><img src="https://camo.githubusercontent.com/093b50b5f187150398091905eda8b9fa9b0ef5b894ed43271b2b1c5d6823a044/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31325f30302d30312d34382e706e67" alt="Snipaste_2024-08-12_00-01-48" data-canonical-src="https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-12_00-01-48.png" style="max-width: 100%;"></a></p>
-<h2>4.文档类型</h2>
+<h2>5.标准的文档结构</h2>
+<p>html：页面，html文档</p>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span></pre></div>
-<p>1.这行代码是HTML文档的声明，用于告诉浏览器该文档是使用HTML5标准编写的</p></div>
+<p>1.这行是HTML文档的声明，用于告诉浏览器该文档是使用HTML5标准编写的。</p>
+<p>2.声明不是HTML标签，不是元素，不是属性，不是注释，声明没有结束标签。</p>
+<p>3.声明必须写在HTML文档的第一行，不能写在其他地方。</p>
+<p>4.声明不是必须的，但是建议写上反正可以直接生成，写上目的是告诉浏览器按照HTML5标准来解析该文档。不写上浏览器会进入怪异渲染模式套用其他标准来解析该文档。</p>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">en</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
+<p>1.这是HTML文档的根元素一个页面就一个<code class="notranslate">&lt;html&gt;</code>元素，并且该元素是所有其他元素的父元素或祖先元素。</p>
+<p>2.在HTML5版本中没有强制要求书写该元素，但是在XHTML版本中必须书写所有的HTML元素都必须嵌套在<code class="notranslate">&lt;html&gt;</code>元素中。</p>
+<p>3.lang属性：language，是全局属性，表示该文档使用的文字是哪一种自然语言书写的，<code class="notranslate">en</code>表示英文，一般教程里面都是用<code class="notranslate">zh-CN</code>表示中文但是按照标准来国内用<code class="notranslate">cmn-hans</code>比较好。它代表的是简体中文（Simplified Chinese），"cmn"：代表中文（Chinese），"hans"：代表简体中文（Simplified Chinese）。</p>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
+<p>1.<code class="notranslate">head</code>和<code class="notranslate">body</code>必须作为<code class="notranslate">html</code>的子元素出现。</p>
+<p>2.<code class="notranslate">head</code>是头部元素，文档头，文档头内部的内容不会显示在页面上，哪怕是<code class="notranslate">&lt;title&gt;</code>也是在页面的窗口上显示。</p>
+<p>3.文档头里面的元素有<code class="notranslate">&lt;meta&gt;</code>是空元素，表示文档的元数据：附件信息，它第一行里面有<code class="notranslate">charset</code>是局部属性是<code class="notranslate">meta</code>特有的。它的作用是告诉浏览器该文档使用的是UTF-8编码，UTF-8编码是国际通用的编码可以显示世界上所有的文字，所以平时一般都是使用UTF-8编码来书写。（扩展知识：中文汉字编码表GB2312，GBK是台湾的繁体字编码表。）</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
