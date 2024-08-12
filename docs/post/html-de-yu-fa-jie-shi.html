@@ -16,7 +16,7 @@
 <h1>一级标题</h1>
 ```
 
-1.`h1`官方的叫法：元素（element），其他叫法：标签，标记。">
+1.`h1`官方称呼为：元素（element），其他的书籍或教程视频里的叫法为：标签，标记。">
 <meta property="og:title" content="html的语法解释">
 <meta property="og:description" content="## 1.元素
 
@@ -24,7 +24,7 @@
 <h1>一级标题</h1>
 ```
 
-1.`h1`官方的叫法：元素（element），其他叫法：标签，标记。">
+1.`h1`官方称呼为：元素（element），其他的书籍或教程视频里的叫法为：标签，标记。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://chair-lin.github.io/post/html-de-yu-fa-jie-shi.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/175963549?s=400&u=4f538fec624d0bddb4c00e9edca2e09aaeafe15f&v=4">
@@ -97,10 +97,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><h2>1.元素</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span>一级标题<span class="pl-kos">&lt;/</span><span class="pl-ent">h1</span><span class="pl-kos">&gt;</span></pre></div>
-<p>1.<code class="notranslate">h1</code>官方的叫法：元素（element），其他叫法：标签，标记。</p>
-<p>2.元素 = 起始标签 + 结束标签 + 内容 + 属性,（起始标签和结束标签里面的元素一定是一样的，<strong>不要用大写用小写</strong>，结束标签比起始多一个/）</p>
-<p>3.不同的元素有不同的功能，<code class="notranslate">h1</code>是一级标题为标题标签，<code class="notranslate">p</code>是段落标签。</p>
-<p>4.一般情况下，成对出现的元素是用来渲染内容的，比如<code class="notranslate">&lt;h1&gt;&lt;/h1&gt;</code>，<code class="notranslate">&lt;p&gt;&lt;/p&gt;</code>，不要渲染内容的时候，可以单独出现的，比如<code class="notranslate">&lt;img&gt;</code>，<code class="notranslate">&lt;input&gt;</code>这种被称之为<strong>空元素</strong>或单标签只能有起始标签不能有结束标签。</p>
+<p>1.<code class="notranslate">h1</code>官方称呼为：元素（element），其他的书籍或教程视频里的叫法为：标签，标记。</p>
+<p>2.元素 = 起始标签 + 结束标签 + 内容 + 属性,（起始标签和结束标签里面的元素一定要是一样的否则没有效果，<strong>不要用大写用小写</strong>，结束标签比起始多一个/）</p>
+<p>3.不同的元素有不同的功能，比如：<code class="notranslate">h1</code>是一级标题为标题标签，<code class="notranslate">p</code>是段落标签。</p>
+<p>4.一般情况下，成对出现的元素是用来渲染内容的，比如<code class="notranslate">&lt;h1&gt;&lt;/h1&gt;</code>，<code class="notranslate">&lt;p&gt;&lt;/p&gt;</code>，不用做渲染内容的时候，也有可以单独出现的，比如<code class="notranslate">&lt;img&gt;</code>，<code class="notranslate">&lt;input&gt;</code>这种被称之为<strong>空元素</strong>或单标签只能有起始标签不能有结束标签。</p>
 <blockquote>
 <p>空元素有两种写法：</p>
 <ul>
@@ -115,7 +115,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h2>2.属性</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">UTF-8</span>"<span class="pl-kos">&gt;</span></pre></div>
 <p>1.属性是元素的附加信息，属性只能出现在起始标签中，属性 = 属性名 + 属性值，属性名和属性值用等号连接，多个属性之间用空格隔开。</p>
-<p>2.属性的属性值用引号包裹起来，引号可以是单引号也可以是双引号，但是必须统一。</p>
+<p>2.属性值用引号包裹起来，引号可以是单引号也可以是双引号，但是必须统一。</p>
 <p>3.属性名是固定的，不能随便写，属性值是自定义的，可以随便写但是要通俗易懂。</p>
 <p>4.属性分两类：</p>
 <ul>
@@ -125,7 +125,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <h2>3.注释</h2>
 <div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-c">&lt;!-- 我是注释 --&gt;</span></pre></div>
 <p>1.注释是给程序员看的，浏览器不会解析注释，注释不会显示在页面上。</p>
-<p>2.注释的写法：<code class="notranslate">注释内容</code>，在vscode中可以通过<code class="notranslate">Ctrl + /</code>快速生成注释或取消。</p>
+<p>2.注释的写法：<code class="notranslate">&lt;!--  --&gt;</code>，在vscode中可以通过<code class="notranslate">Ctrl + /</code>快速生成注释或取消。</p>
 <p>3.注释可以写多行，注释不能嵌套代码原因参考第一条。</p>
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/093b50b5f187150398091905eda8b9fa9b0ef5b894ed43271b2b1c5d6823a044/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31325f30302d30312d34382e706e67"><img src="https://camo.githubusercontent.com/093b50b5f187150398091905eda8b9fa9b0ef5b894ed43271b2b1c5d6823a044/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d31325f30302d30312d34382e706e67" alt="Snipaste_2024-08-12_00-01-48" data-canonical-src="https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-12_00-01-48.png" style="max-width: 100%;"></a></p>
 <h2>4.文档类型</h2>
