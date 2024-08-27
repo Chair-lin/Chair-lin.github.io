@@ -149,15 +149,28 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>1.这是HTML文档的根元素一个页面就一个<code class="notranslate">&lt;html&gt;</code>元素，并且该元素是所有其他元素的父元素或祖先元素。</p>
 <p>2.在HTML5版本中没有强制要求书写该元素，但是在XHTML版本中必须书写所有的HTML元素都必须嵌套在<code class="notranslate">&lt;html&gt;</code>元素中。</p>
 <p>3.lang属性：language，是全局属性，表示该文档使用的文字是哪一种自然语言书写的，<code class="notranslate">en</code>表示英文，一般教程里面都是用<code class="notranslate">zh-CN</code>表示中文但是按照标准来国内用<code class="notranslate">cmn-hans</code>比较好。它代表的是简体中文（Simplified Chinese），"cmn"：代表中文（Chinese），"hans"：代表简体中文（Simplified Chinese）。</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
-    <span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span><span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-c1">&lt;!DOCTYPE html<span class="pl-kos">&gt;</span></span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">html</span> <span class="pl-c1">lang</span>="<span class="pl-s">cmn-hans</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">charset</span>="<span class="pl-s">UTF-8</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1.0</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">http-equiv</span>="<span class="pl-s">X-UA-Compatible</span>" <span class="pl-c1">content</span>="<span class="pl-s">IE=edge</span>"<span class="pl-kos">&gt;</span>
+    <span class="pl-kos">&lt;</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>网页窗口标题<span class="pl-kos">&lt;/</span><span class="pl-ent">title</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">head</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;/</span><span class="pl-ent">body</span><span class="pl-kos">&gt;</span>
 <span class="pl-kos">&lt;/</span><span class="pl-ent">html</span><span class="pl-kos">&gt;</span></pre></div>
 <p>1.<code class="notranslate">head</code>和<code class="notranslate">body</code>必须作为<code class="notranslate">html</code>的子元素出现。</p>
 <p>2.<code class="notranslate">head</code>是头部元素，文档头，文档头内部的内容不会显示在页面上，哪怕是<code class="notranslate">&lt;title&gt;</code>也是在页面的窗口上显示。</p>
-<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">metal</span> <span class="pl-c1">charset</span>=<span class="pl-s">＂UTF-8＂</span><span class="pl-kos">&gt;</span></pre></div>
-<p>3.文档头里面的元素有<code class="notranslate">&lt;meta&gt;</code>是空元素，表示文档的元数据：附件信息，它第一行里面有<code class="notranslate">charset</code>是局部属性是<code class="notranslate">meta</code>特有的。它的作用是告诉浏览器该文档使用的是UTF-8编码，UTF-8编码是国际通用的编码可以显示世界上所有的文字，所以平时一般都是使用UTF-8编码来书写。（扩展知识：中文汉字编码表GB2312，GBK是台湾的繁体字编码表。）</p>
-<p>.<code class="notranslate">body</code>是主体元素。</p></div>
+<div class="highlight highlight-text-html-basic"><pre class="notranslate"><span class="pl-kos">&lt;</span><span class="pl-ent">metal</span> <span class="pl-c1">charset</span>=<span class="pl-s">＂UTF-8＂</span><span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">name</span>="<span class="pl-s">viewport</span>" <span class="pl-c1">content</span>="<span class="pl-s">width=device-width, initial-scale=1.0</span>"<span class="pl-kos">&gt;</span>
+<span class="pl-kos">&lt;</span><span class="pl-ent">meta</span> <span class="pl-c1">http-equiv</span>="<span class="pl-s">X-UA-Compatible</span>" <span class="pl-c1">content</span>="<span class="pl-s">IE=edge</span>"<span class="pl-kos">&gt;</span></pre></div>
+<p>3.第一行文档头里面的元素有<code class="notranslate">&lt;meta&gt;</code>是空元素，表示文档的元数据：附件信息，它第一行里面有<code class="notranslate">charset</code>是局部属性是<code class="notranslate">meta</code>特有的。它的作用是告诉浏览器该文档使用的是UTF-8编码，UTF-8编码是国际通用的编码可以显示世界上所有的文字，所以平时一般都是使用UTF-8编码来书写。（扩展知识：中文汉字编码表GB2312，GBK是台湾的繁体字编码表。）</p>
+<p>4.第二行的作用是用来适配手机端的，意思是把网页的视口的宽度设置为设备宽度。</p>
+<p>5.第三行是用来解决IE浏览器的问题用的，意思是告诉浏览器在使用IE浏览器内核的时候使用edge浏览器的内核。（ps：因为IE浏览器的内核带来了很多的问题而这些问题都不太好解决浏览器又要升级，所以在win10系统出来后微软又做了一个<strong>edge浏览器</strong>然后从IE10开始IE浏览器的内核就可以切换为<strong>egde</strong>的内核。当然现在的（2024年）edge浏览器内核已经换成Chrome浏览器的内核了）</p>
+<p>6.<code class="notranslate">&lt;title&gt;&lt;/title&gt;</code>标签表示网页标题，在浏览器窗口上面显示。</p>
+<p><a target="_blank" rel="noopener noreferrer nofollow" href="https://camo.githubusercontent.com/6cce48820f4b20bf47cf81c6f63e54a879c081a0e702164a8646d6eb97d9bc82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d30355f30302d32382d30342e706e67"><img src="https://camo.githubusercontent.com/6cce48820f4b20bf47cf81c6f63e54a879c081a0e702164a8646d6eb97d9bc82/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f43686169722d6c696e2f7475636875616e672f696d672f536e6970617374655f323032342d30382d30355f30302d32382d30342e706e67" alt="Snipaste_2024-08-05_00-28-04" data-canonical-src="https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-05_00-28-04.png" style="max-width: 100%;"></a></p>
+<p>7.<code class="notranslate">body</code>是文档体，页面上所有要参与显示的元素都应该写在<code class="notranslate">body</code>标签里面。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>

@@ -92,9 +92,16 @@ html：页面，html文档
 3.lang属性：language，是全局属性，表示该文档使用的文字是哪一种自然语言书写的，`en`表示英文，一般教程里面都是用`zh-CN`表示中文但是按照标准来国内用`cmn-hans`比较好。它代表的是简体中文（Simplified Chinese），"cmn"：代表中文（Chinese），"hans"：代表简体中文（Simplified Chinese）。
 
 ```html
-<html>
-    <head></head>
-    <body></body>
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网页窗口标题</title>
+</head>
+<body>
+</body>
 </html>
 ```
 1.`head`和`body`必须作为`html`的子元素出现。
@@ -102,7 +109,17 @@ html：页面，html文档
 2.`head`是头部元素，文档头，文档头内部的内容不会显示在页面上，哪怕是`<title>`也是在页面的窗口上显示。
 ```HTML
 <metal charset=＂UTF-8＂>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
-3.文档头里面的元素有`<meta>`是空元素，表示文档的元数据：附件信息，它第一行里面有`charset`是局部属性是`meta`特有的。它的作用是告诉浏览器该文档使用的是UTF-8编码，UTF-8编码是国际通用的编码可以显示世界上所有的文字，所以平时一般都是使用UTF-8编码来书写。（扩展知识：中文汉字编码表GB2312，GBK是台湾的繁体字编码表。）
+3.第一行文档头里面的元素有`<meta>`是空元素，表示文档的元数据：附件信息，它第一行里面有`charset`是局部属性是`meta`特有的。它的作用是告诉浏览器该文档使用的是UTF-8编码，UTF-8编码是国际通用的编码可以显示世界上所有的文字，所以平时一般都是使用UTF-8编码来书写。（扩展知识：中文汉字编码表GB2312，GBK是台湾的繁体字编码表。）
 
-.`body`是主体元素。
+4.第二行的作用是用来适配手机端的，意思是把网页的视口的宽度设置为设备宽度。
+
+5.第三行是用来解决IE浏览器的问题用的，意思是告诉浏览器在使用IE浏览器内核的时候使用edge浏览器的内核。（ps：因为IE浏览器的内核带来了很多的问题而这些问题都不太好解决浏览器又要升级，所以在win10系统出来后微软又做了一个**edge浏览器**然后从IE10开始IE浏览器的内核就可以切换为**egde**的内核。当然现在的（2024年）edge浏览器内核已经换成Chrome浏览器的内核了）
+
+6.`<title></title>`标签表示网页标题，在浏览器窗口上面显示。
+
+![Snipaste_2024-08-05_00-28-04](https://cdn.jsdelivr.net/gh/Chair-lin/tuchuang/img/Snipaste_2024-08-05_00-28-04.png)
+
+7.`body`是文档体，页面上所有要参与显示的元素都应该写在`body`标签里面。
